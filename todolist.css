@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Use the 'Poppins' font */
+  margin: 10% 10% 10% 10%;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6;
+  animation: fadeIn 0.5s ease; /* Added fade-in animation */
+}
+
+h1 {
+  text-align: center;
+  color: #2e4466;
+  margin-bottom: 20px;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  margin-right: 10px;
+  border: 2px solid #7ca1d6;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #7ca1d6;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #2e4466;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+button.remove {
+  background-color: #ff5757;
+}
+
+button.remove:hover {
+  background-color: #ff7676;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #777777;
+}
+
+.done-button {
+  padding: 8px 20px;
+  margin-right: 10px;
+  background-color: #2e7d32;
+}
+
+.done-button:hover {
+  background-color: #388e3c;
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
